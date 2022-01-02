@@ -7,22 +7,35 @@
 #include "slist/pstack.h"
 #include "slist/slist-util.h"
 
+/// `print` prints the skip list
+/// @param self
+/// @return void
 void print(const SList *self) {
 
 }
 
+/// `print_metadata` prints data about a passed in list (if not NULL)
+/// @param self
+/// @return void
 void print_metadata(const SList *self) {
+    if (self == NULL) return;
     printf("\n----- START SKIP LIST METADATA -----\n\n");
     printf(">length: %d\n", self->length);
     printf(">max_levels: %d\n", self->max_levels);
     printf("\n----- END SKIP LIST METADATA -----\n");
 }
 
+/// `destroy` will destroy a passed in list (if not null) by freeing all of its nodes and returning
+/// @param self
+/// @return void
 void destroy(SList *self) {
 
 }
 
-
+/// `add_level` adds another level to the passed in list (if not NULL) by updating the top_left and
+/// top_right pointers
+/// @param self
+/// @return void
 void add_level(SList *self) {
     SListNode *new_top_left = self->create_sentinel(negative);
     SListNode *new_top_right = self->create_sentinel(positive);
@@ -36,6 +49,10 @@ void add_level(SList *self) {
     self->top_right = new_top_right;
 }
 
+/// `remove_level` removes a level from the passed in list (if not NULL) by updating the top_left and
+/// top_right pointers just like add_level. It fails if the list has a height less than 2;
+/// @param self
+/// @return void
 void remove_level(SList *self) {
     if (self->max_levels == 1) {
         printf("not_enough_levels");
@@ -58,6 +75,10 @@ void remove_level(SList *self) {
     self->top_right = new_top_right;
 }
 
+/// `rebalance_levels` recalculates and resets the passed in list's levels (if not NULL) and calls either add_level
+/// or remove_level
+/// @param self
+/// @return void
 void rebalance_levels(SList *self) {
     unsigned int old_max_levels = self->max_levels;
     unsigned int new_max_levels = self->util->recalculate_max_levels(self->length);
@@ -72,6 +93,10 @@ void rebalance_levels(SList *self) {
     }
 }
 
+/// `create_sentinel` creates a new sentinel node with an enumerated value (positive or negative) as a
+/// parameter. If positive, the sentinel's value is +infinity. Otherwise, it is -infinity;
+/// @param sign
+/// @return SListNode*
 SListNode *create_sentinel(SIGN sign) {
     SListNode *new_sentinel = malloc(sizeof(SListNode));
     switch (sign) {
@@ -90,6 +115,10 @@ SListNode *create_sentinel(SIGN sign) {
     return new_sentinel;
 }
 
+/// `create_node` creates a generic node with a double value and initializes all the node's pointers to
+/// null. Be sure that you assign these pointers before attempting to dereference them
+/// @param val
+/// @return SListNode*
 SListNode *create_node(double val) {
     SListNode *new_node = malloc(sizeof(SListNode));
     new_node->val = val;
@@ -97,11 +126,10 @@ SListNode *create_node(double val) {
     return new_node;
 }
 
-/// search will search the passed-in (by pointer) SList* (self) for the passed-in double (val)
+/// `search` will search the passed-in (by pointer) SList* (self) for the passed-in double (val)
 /// @param self
 /// @param val
-/// @return SListNode* -> pointer to the found node or a null pointer
-
+/// @return SListNode*
 SListNode *search(const SList *self, double val) {
     SListNode *it = self->top_left;
     for (unsigned int i = 0; i < self->max_levels; i++) {
@@ -118,6 +146,11 @@ SListNode *search(const SList *self, double val) {
     return it->next;
 }
 
+/// `get_left_adjacent_pointers` returns a stack of pointers which correspond to the nodes where
+/// the algorithm moved down from an upper row.
+/// @param self
+/// @param val
+/// @return PStack*
 PStack *get_left_adjacent_pointers(const SList *self, double val) {
     PStack *pointer_stack = new_pstack();
     SListNode *it = self->top_left;
@@ -135,6 +168,11 @@ PStack *get_left_adjacent_pointers(const SList *self, double val) {
     return pointer_stack;
 }
 
+/// `insert` inserts a node of arbitrary double value into the list. It uses the `get_left_adjacent_pointers`
+/// method to figure out where.
+/// @param self
+/// @param val
+/// @return void
 void insert(SList *self, double val) {
     if (self->length == 0) {
         SListNode *new_node = self->create_node(val);
@@ -170,6 +208,10 @@ void insert(SList *self, double val) {
     }
 }
 
+/// `delete` deletes an arbitrary node from the list (if it exists). It uses the search method to figure out where
+/// @param self
+/// @param val
+/// @return void
 void delete(SList *self, double val) {
     SListNode *root_node = self->search(self, val);
     if (root_node == NULL) {
@@ -189,6 +231,11 @@ void delete(SList *self, double val) {
     self->rebalance_levels(self);
 }
 
+/// `new_slist` creates and returns a new (pointer to) an instance of a skip list, with all its function pointers
+/// initialized it acts as a proto-constructor, but not really because you still have to pass `itself` into any
+/// of its function pointers if the function needs to operate on `itself`, so there's no true encapsulation or
+/// ownership of the methods
+/// @return SList*
 SList *new_slist() {
     SList *new_slist = malloc(sizeof(SList));
     new_slist->util = new_slist_util();

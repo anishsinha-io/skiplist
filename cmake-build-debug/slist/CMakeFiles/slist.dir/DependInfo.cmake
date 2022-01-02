@@ -8,7 +8,6 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/anishsinha/Home/cprojects/skiplist/slist/src/mock.c" "/Users/anishsinha/Home/cprojects/skiplist/cmake-build-debug/slist/CMakeFiles/slist.dir/src/mock.c.o"
   "/Users/anishsinha/Home/cprojects/skiplist/slist/src/pstack.c" "/Users/anishsinha/Home/cprojects/skiplist/cmake-build-debug/slist/CMakeFiles/slist.dir/src/pstack.c.o"
   "/Users/anishsinha/Home/cprojects/skiplist/slist/src/slist-util.c" "/Users/anishsinha/Home/cprojects/skiplist/cmake-build-debug/slist/CMakeFiles/slist.dir/src/slist-util.c.o"
   "/Users/anishsinha/Home/cprojects/skiplist/slist/src/slist.c" "/Users/anishsinha/Home/cprojects/skiplist/cmake-build-debug/slist/CMakeFiles/slist.dir/src/slist.c.o"

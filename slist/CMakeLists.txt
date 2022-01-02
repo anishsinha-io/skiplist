@@ -1,4 +1,4 @@
-add_library(slist src/pstack.c include/slist/pstack.h src/slist.c include/slist/slist.h src/slist-util.c include/slist/slist-util.h src/mock.c include/slist/mock.h src/util.c include/slist/util.h)
+add_library(slist src/pstack.c include/slist/pstack.h src/slist.c include/slist/slist.h src/slist-util.c include/slist/slist-util.h src/util.c include/slist/util.h)
 set(CMAKE_MODULE_PATH "${CMAKE_INSTALL_PREFIX}/var/cmake/modules")
 find_package(Sodium REQUIRED)
 target_include_directories(slist PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include ${sodium_INCLUDE_DIR})

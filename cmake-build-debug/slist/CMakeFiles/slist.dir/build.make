@@ -105,22 +105,9 @@ slist/CMakeFiles/slist.dir/src/slist-util.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/slist.dir/src/slist-util.c.s"
 	cd /Users/anishsinha/Home/cprojects/skiplist/cmake-build-debug/slist && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/anishsinha/Home/cprojects/skiplist/slist/src/slist-util.c -o CMakeFiles/slist.dir/src/slist-util.c.s
 
-slist/CMakeFiles/slist.dir/src/mock.c.o: slist/CMakeFiles/slist.dir/flags.make
-slist/CMakeFiles/slist.dir/src/mock.c.o: ../slist/src/mock.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/anishsinha/Home/cprojects/skiplist/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object slist/CMakeFiles/slist.dir/src/mock.c.o"
-	cd /Users/anishsinha/Home/cprojects/skiplist/cmake-build-debug/slist && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/slist.dir/src/mock.c.o -c /Users/anishsinha/Home/cprojects/skiplist/slist/src/mock.c
-
-slist/CMakeFiles/slist.dir/src/mock.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/slist.dir/src/mock.c.i"
-	cd /Users/anishsinha/Home/cprojects/skiplist/cmake-build-debug/slist && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/anishsinha/Home/cprojects/skiplist/slist/src/mock.c > CMakeFiles/slist.dir/src/mock.c.i
-
-slist/CMakeFiles/slist.dir/src/mock.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/slist.dir/src/mock.c.s"
-	cd /Users/anishsinha/Home/cprojects/skiplist/cmake-build-debug/slist && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/anishsinha/Home/cprojects/skiplist/slist/src/mock.c -o CMakeFiles/slist.dir/src/mock.c.s
-
 slist/CMakeFiles/slist.dir/src/util.c.o: slist/CMakeFiles/slist.dir/flags.make
 slist/CMakeFiles/slist.dir/src/util.c.o: ../slist/src/util.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/anishsinha/Home/cprojects/skiplist/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object slist/CMakeFiles/slist.dir/src/util.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/anishsinha/Home/cprojects/skiplist/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object slist/CMakeFiles/slist.dir/src/util.c.o"
 	cd /Users/anishsinha/Home/cprojects/skiplist/cmake-build-debug/slist && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/slist.dir/src/util.c.o -c /Users/anishsinha/Home/cprojects/skiplist/slist/src/util.c
 
 slist/CMakeFiles/slist.dir/src/util.c.i: cmake_force
@@ -136,7 +123,6 @@ slist_OBJECTS = \
 "CMakeFiles/slist.dir/src/pstack.c.o" \
 "CMakeFiles/slist.dir/src/slist.c.o" \
 "CMakeFiles/slist.dir/src/slist-util.c.o" \
-"CMakeFiles/slist.dir/src/mock.c.o" \
 "CMakeFiles/slist.dir/src/util.c.o"
 
 # External object files for target slist
@@ -145,11 +131,10 @@ slist_EXTERNAL_OBJECTS =
 slist/libslist.a: slist/CMakeFiles/slist.dir/src/pstack.c.o
 slist/libslist.a: slist/CMakeFiles/slist.dir/src/slist.c.o
 slist/libslist.a: slist/CMakeFiles/slist.dir/src/slist-util.c.o
-slist/libslist.a: slist/CMakeFiles/slist.dir/src/mock.c.o
 slist/libslist.a: slist/CMakeFiles/slist.dir/src/util.c.o
 slist/libslist.a: slist/CMakeFiles/slist.dir/build.make
 slist/libslist.a: slist/CMakeFiles/slist.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/anishsinha/Home/cprojects/skiplist/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C static library libslist.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/anishsinha/Home/cprojects/skiplist/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C static library libslist.a"
 	cd /Users/anishsinha/Home/cprojects/skiplist/cmake-build-debug/slist && $(CMAKE_COMMAND) -P CMakeFiles/slist.dir/cmake_clean_target.cmake
 	cd /Users/anishsinha/Home/cprojects/skiplist/cmake-build-debug/slist && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/slist.dir/link.txt --verbose=$(VERBOSE)
 

@@ -103,7 +103,7 @@ CMakeFiles/skiplist.dir/all: slist/CMakeFiles/slist.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/skiplist.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/anishsinha/Home/cprojects/skiplist/cmake-build-debug/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/anishsinha/Home/cprojects/skiplist/cmake-build-debug/CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/skiplist.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/anishsinha/Home/cprojects/skiplist/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/skiplist.dir/rule
@@ -124,12 +124,12 @@ CMakeFiles/skiplist.dir/clean:
 slist/CMakeFiles/slist.dir/all:
 	$(MAKE) $(MAKESILENT) -f slist/CMakeFiles/slist.dir/build.make slist/CMakeFiles/slist.dir/depend
 	$(MAKE) $(MAKESILENT) -f slist/CMakeFiles/slist.dir/build.make slist/CMakeFiles/slist.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/anishsinha/Home/cprojects/skiplist/cmake-build-debug/CMakeFiles --progress-num=3,4,5,6,7,8 "Built target slist"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/anishsinha/Home/cprojects/skiplist/cmake-build-debug/CMakeFiles --progress-num=3,4,5,6,7 "Built target slist"
 .PHONY : slist/CMakeFiles/slist.dir/all
 
 # Build rule for subdir invocation for target.
 slist/CMakeFiles/slist.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/anishsinha/Home/cprojects/skiplist/cmake-build-debug/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/anishsinha/Home/cprojects/skiplist/cmake-build-debug/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 slist/CMakeFiles/slist.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/anishsinha/Home/cprojects/skiplist/cmake-build-debug/CMakeFiles 0
 .PHONY : slist/CMakeFiles/slist.dir/rule

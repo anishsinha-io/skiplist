@@ -130,30 +130,6 @@ slist/fast:
 	cd /Users/anishsinha/Home/cprojects/skiplist/cmake-build-debug && $(MAKE) $(MAKESILENT) -f slist/CMakeFiles/slist.dir/build.make slist/CMakeFiles/slist.dir/build
 .PHONY : slist/fast
 
-src/mock.o: src/mock.c.o
-.PHONY : src/mock.o
-
-# target to build an object file
-src/mock.c.o:
-	cd /Users/anishsinha/Home/cprojects/skiplist/cmake-build-debug && $(MAKE) $(MAKESILENT) -f slist/CMakeFiles/slist.dir/build.make slist/CMakeFiles/slist.dir/src/mock.c.o
-.PHONY : src/mock.c.o
-
-src/mock.i: src/mock.c.i
-.PHONY : src/mock.i
-
-# target to preprocess a source file
-src/mock.c.i:
-	cd /Users/anishsinha/Home/cprojects/skiplist/cmake-build-debug && $(MAKE) $(MAKESILENT) -f slist/CMakeFiles/slist.dir/build.make slist/CMakeFiles/slist.dir/src/mock.c.i
-.PHONY : src/mock.c.i
-
-src/mock.s: src/mock.c.s
-.PHONY : src/mock.s
-
-# target to generate assembly for a file
-src/mock.c.s:
-	cd /Users/anishsinha/Home/cprojects/skiplist/cmake-build-debug && $(MAKE) $(MAKESILENT) -f slist/CMakeFiles/slist.dir/build.make slist/CMakeFiles/slist.dir/src/mock.c.s
-.PHONY : src/mock.c.s
-
 src/pstack.o: src/pstack.c.o
 .PHONY : src/pstack.o
 
@@ -259,9 +235,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... slist"
-	@echo "... src/mock.o"
-	@echo "... src/mock.i"
-	@echo "... src/mock.s"
 	@echo "... src/pstack.o"
 	@echo "... src/pstack.i"
 	@echo "... src/pstack.s"

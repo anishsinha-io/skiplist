@@ -1,5 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/slist.dir/src/mock.c.o"
   "CMakeFiles/slist.dir/src/pstack.c.o"
   "CMakeFiles/slist.dir/src/slist-util.c.o"
   "CMakeFiles/slist.dir/src/slist.c.o"

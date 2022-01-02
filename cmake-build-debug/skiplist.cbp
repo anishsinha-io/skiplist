@@ -125,9 +125,6 @@
 		<Unit filename="/Users/anishsinha/Home/cprojects/skiplist/main.c">
 			<Option target="skiplist"/>
 		</Unit>
-		<Unit filename="/Users/anishsinha/Home/cprojects/skiplist/slist/include/slist/mock.h">
-			<Option target="slist"/>
-		</Unit>
 		<Unit filename="/Users/anishsinha/Home/cprojects/skiplist/slist/include/slist/pstack.h">
 			<Option target="slist"/>
 		</Unit>
@@ -138,9 +135,6 @@
 			<Option target="slist"/>
 		</Unit>
 		<Unit filename="/Users/anishsinha/Home/cprojects/skiplist/slist/include/slist/util.h">
-			<Option target="slist"/>
-		</Unit>
-		<Unit filename="/Users/anishsinha/Home/cprojects/skiplist/slist/src/mock.c">
 			<Option target="slist"/>
 		</Unit>
 		<Unit filename="/Users/anishsinha/Home/cprojects/skiplist/slist/src/pstack.c">

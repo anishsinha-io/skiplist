@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../slist/include/slist/models.h
+stdbool.h
+-
+
+../slist/include/slist/pstack.h
+models.h
+../slist/include/slist/models.h
+stdbool.h
+-
+
+../slist/include/slist/slist-util.h
+models.h
+../slist/include/slist/models.h
+
+../slist/include/slist/slist.h
+models.h
+../slist/include/slist/models.h
+
+/Users/anishsinha/Home/cprojects/skiplist/slist/src/slist.c
+slist/slist.h
+/Users/anishsinha/Home/cprojects/skiplist/slist/src/slist/slist.h
+slist/models.h
+/Users/anishsinha/Home/cprojects/skiplist/slist/src/slist/models.h
+stdlib.h
+-
+math.h
+-
+stdio.h
+-
+stdbool.h
+-
+slist/pstack.h
+/Users/anishsinha/Home/cprojects/skiplist/slist/src/slist/pstack.h
+slist/slist-util.h
+/Users/anishsinha/Home/cprojects/skiplist/slist/src/slist/slist-util.h
+

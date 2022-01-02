@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.20)
+project(skiplist C)
+set(CMAKE_C_STANDARD 99)
+add_subdirectory(slist)
+add_executable(skiplist main.c)
+target_link_libraries(skiplist PRIVATE slist)

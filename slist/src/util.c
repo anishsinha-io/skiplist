@@ -1,7 +1,3 @@
-//
-// Created by Anish Sinha on 12/31/21.
-//
-
 #include "slist/util.h"
 #include <stdio.h>
 
